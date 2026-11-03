@@ -1,0 +1,12 @@
+{
+  "name": "WorkBuddy积分助手",
+  "installedAt": 1790229834868,
+  "source": "marketplace",
+  "version": "3.1.7",
+  "skillId": "skill_2095638135306883072",
+  "description_zh": "WorkBuddy积分助手：读取本机已登录态，接口直查 Buddy 加油站数据，生成每日积分播报；支持成长计划只读展示、派猫猫旅行只读展示与全自动闭环（先领后派），以及一键自动签到（幂等安全）；另支持把每日播报推送至用户自有消息渠道（钉钉/飞书/企业微信/微信/邮件/短信/Slack/Telegram/Bark/通用Webhook/系统通知，默认复用消息推送技能 config.json，--no-push 可关），凭据只存本地、绝不外传。以只读为主；写操作仅限签到与旅行派出/领取，且旅行需显式加 --travel-auto 才执行；不打印 token，不修改登录态。",
+  "description_en": "WorkBuddy Credit Assistant reads the local login state and queries Buddy Station data via API to produce a daily credit report (balance, streak, activity calendar, weekly progress, current event, streak rewards). It also shows the read-only growth plan and Buddy travel status (location, countdown, claimable credits), and supports one-click idempotent auto check-in plus a fully automated Buddy travel loop (claim first, then depart, only with an explicit --travel-auto flag). It can also push the daily report to the user's own messaging channels (DingTalk/Feishu/WeCom/WeChat/PushPlus/Email/SMS/Slack/Telegram/Bark/Generic Webhook/System, reusing the message-push skill config by default, disabled with --no-push). Read-only by default; write calls are limited to check-in and travel claim/depart, and never print the token.",
+  "iconSource": "https://openplatform-cdn.codebuddy.cn/public/common/capability_cover/ae304eab-7e4a-4c3f-a5dc-52c2fdd6aec5/348c2822-d38b-4a36-8a9f-e1c927f7d463.png",
+  "iconLocalPath": "C:\\Users\\wenwei\\.workbuddy\\skills\\totorosir-workbuddy-score\\_icon.png",
+  "iconDownloadedFrom": "https://openplatform-cdn.codebuddy.cn/public/common/capability_cover/ae304eab-7e4a-4c3f-a5dc-52c2fdd6aec5/348c2822-d38b-4a36-8a9f-e1c927f7d463.png"
+}

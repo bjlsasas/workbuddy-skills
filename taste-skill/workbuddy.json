@@ -1,0 +1,6 @@
+{
+  "display_name": "Taste Skill",
+  "display_name_en": "Taste Skill",
+  "description_zh": "反 AI 模板化的前端设计 skill。读需求 brief → 定 design direction → 调三个旋钮（DESIGN_VARIANCE / MOTION_INTENSITY / VISUAL_DENSITY）→ 产出配色、字体、布局、动效，交付前跑 pre-flight 审计。适合落地页、作品集、营销站、产品页。",
+  "description_en": "Anti-slop frontend design skill. Reads a brief, declares a design direction, tunes three dials (variance / motion / density), and ships with pre-flight audits. For landing pages, portfolios, marketing sites, product pages."
+}

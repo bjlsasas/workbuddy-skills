@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# 临时文件
+*.tmp
+*.log
+.wb-rescan-trigger
+
+# WorkBuddy 内部迁移元数据 + Syncthing 冲突残留
+.*_migration.json
+*.sync-conflict-*
+_bm_skillid_migration.json
+
+# Syncthing 同步标记
+.stfolder

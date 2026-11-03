@@ -1,0 +1,11 @@
+{
+  "name": "Impeccable",
+  "installedAt": 1792750200000,
+  "source": "github",
+  "version": "4.7.0",
+  "skillId": "impeccable",
+  "repo": "pbakaus/impeccable",
+  "description_zh": "生产级前端设计质量系统。1 个 skill + 18 条命令（audit / polish / craft / typeset / layout / animate / colorize / bolder / quieter / critique / normalize / harden / optimize / adapt / overdrive / delight / clarify / distill / extract / onboard）+ 7 个领域参考（typography / color / spatial / motion / interaction / responsive / ux-writing）+ 反模式清单。适合需要反复迭代的完整产品界面。",
+  "description_en": "Production-grade frontend design quality system. 1 skill + 18 commands + 7 domain references (typography, color, spatial, motion, interaction, responsive, ux-writing) + anti-pattern bans. For full product interfaces that iterate: landing pages, dashboards, checkout flows, settings screens.",
+  "iconSource": "letter:auto"
+}

@@ -1,0 +1,48 @@
+{
+  "_README": [
+    "多机同步自愈工具包 · 配置模板（可选）",
+    "",
+    "用法：把这个文件复制为同目录下的 sync-heal-config.json，再按需改。",
+    "不需要时什么都不用做 —— 全部字段都有默认值，且多数会在运行时自动探测。",
+    "",
+    "优先级：sync-heal-config.json  →  SYNCHEAL_* 环境变量  →  内置默认",
+    "删掉任何一个键 = 该键回落到下一层，不会报错。",
+    "",
+    "什么情况下需要它：",
+    "  · 你的协同目录不叫 21-SyncAndMigration",
+    "  · 你的四个同步夹不叫 wb-skills / wb-experts-market / wb-experts-cache / my-workspace",
+    "  · 你的专家市场不叫 my-experts",
+    "  · 同步工具不在常见位置、运行时探测不到"
+  ],
+
+  "_field_notes": {
+    "workspace": "工作区根目录的绝对路径。留空则依次尝试 ZGH_WORKSPACE 环境变量、运行时探测。例：\"D:\\\\MyWorkspace\"",
+    "coop_dir": "协同目录名，相对 workspace。两台机器建议同名，便于日志互查。默认 \"21-SyncAndMigration\"",
+    "folder_ids": "四个 Syncthing 文件夹的 id，顺序 = [技能, 专家源包, 专家运行副本, 工作区]。两台机器必须逐字一致",
+    "relay_subdir": "回传日志子目录名（两台机器交换日志用）。默认 \"回传日志\"",
+    "dist_subdir": "分发源子目录名（程序自更新用）。默认 \"自愈程序\"",
+    "market_name": "专家市场名，对应 plugins/marketplaces/<名> 与 plugins/cache/<名>。默认 \"my-experts\"",
+    "expert_name": "只处理某个专家时填它的目录名；留空 = 处理源包里全部专家（推荐）",
+    "peer_id": "对端设备 ID。留空 = 运行时从 Syncthing 设备表自动识别（推荐）。",
+    "dead_ids": "已废弃的设备 ID 列表。同步夹里残留这些设备会导致连接异常，守卫会把它们清掉。留空即可（会自动发现残留）",
+    "sync_root_candidates": "Syncthing 安装目录的候选路径。留空则走运行时探测。多个时按顺序试",
+    "relay_stale_hours": "回传日志「新鲜度」判据：超过这么多小时没更新就提示。默认 72"
+  },
+
+  "workspace": "",
+  "coop_dir": "21-SyncAndMigration",
+  "folder_ids": [
+    "wb-skills",
+    "wb-experts-market",
+    "wb-experts-cache",
+    "my-workspace"
+  ],
+  "relay_subdir": "回传日志",
+  "dist_subdir": "自愈程序",
+  "market_name": "my-experts",
+  "expert_name": "",
+  "peer_id": "",
+  "dead_ids": [],
+  "sync_root_candidates": [],
+  "relay_stale_hours": 72
+}
